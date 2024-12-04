@@ -1,0 +1,37 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Protest Revolution", sans-serif;
+}
+.Container_grid{
+    display: grid;
+    
+    grid-template-columns: 1fr;
+   /*  grid-template-rows: auto 
+                        1fr
+                        1fr
+                        auto ; */
+    grid-template-areas:
+                        "header"
+                        "main"
+                        "aside"
+                        "footer"
+                        ;
+}
+#cabecera{
+    grid-area: header;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#cabecera_navbar{
+    display: none;
+}
+#cuerpo{
+    grid-area: main;
+}
+#formulario{
+    grid-area: aside;
+}
+
