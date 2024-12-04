@@ -7,10 +7,6 @@ body {
     display: grid;
     
     grid-template-columns: 1fr;
-   /*  grid-template-rows: auto 
-                        1fr
-                        1fr
-                        auto ; */
     grid-template-areas:
                         "header"
                         "main"
@@ -18,18 +14,97 @@ body {
                         "footer"
                         ;
 }
+/* ------------------------------------------------------------------------
+-------------------------------------------------------- */
 #cabecera{
     grid-area: header;
     width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: black;
+}
+#cabecera_milogo{
+    margin: 0px 0 0px 20px;
+   border-radius: 48%;
+}
+
+#cabecera_burger{
+    margin: 10px 20px 10px 0;
+    color: aliceblue;
 }
 #cabecera_navbar{
     display: none;
 }
+/* --------------------------------------------------------------------------------
+------------------------      CUERPO    ---------------------------------------- */
 #cuerpo{
     grid-area: main;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+/*----------------------- Hero-section----------------------- */
+#cuerpo_hero{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    width: 90%;
+    height: 100vh;
+    /* margin: auto; */
+}
+.cuerpo_hero_aboutme{
+    display: flex;
+    flex-direction: column;
+    ;
+}
+.cuerpo_hero_aboutme h1{
+    margin: 20px 0 0 0;
+}
+#cuerpo_hero img{
+    width: 100%;
+    height: 250px;
+}
+#cuerpo_hero p{
+    margin:0;
+}
+.cuerpo_hero_iconos{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.cuerpo_hero_iconos_social{
+    display: flex;
+    gap:10px;
+    list-style: none;
+}
+.cuerpo_hero_iconos_tools{
+    display:flex;
+    list-style: none;
+    gap:10px
+}
+.cuerpo_hero_contacto{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cuerpo_hero_contacto button{
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(139, 160, 105);
+    color: whitesmoke;
+}
+/*-------------------Educación section ----------------------*/
+#cuerpo_educacion{
+    min-width: 100vw;
+    min-height: 100vh;
 }
 #formulario{
     grid-area: aside;
