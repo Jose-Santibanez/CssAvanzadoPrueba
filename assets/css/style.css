@@ -76,7 +76,8 @@ body {
 /* titulo */
 .hero_aboutme h1{
     margin: 20px 0 0 0;
-    font-weight: 300;
+    font-weight: 100;
+    color: rgb(184, 236, 189);
 }
 /* imagen */
 #hero img{
@@ -92,8 +93,9 @@ body {
 #hero p{
     margin: 1px 0 0 0;
     text-align: center;
-    font-weight: 300;
-}
+    font-weight: 100;
+    color: rgb(167, 194, 238);
+    font-family: "Nunito", sans-serif;}
 /* -------------------------------- */
 /* -------------- ICONOS-------- */
 .hero_iconos{
@@ -134,7 +136,7 @@ body {
     height: 50px;
     border: none;
     border-radius: 5px;
-    background-color: rgb(217, 228, 115);
+    background-color: rgb(39, 87, 30);
     color: whitesmoke;
 }
 /* --------------------------------------------------------------------------------
@@ -151,24 +153,43 @@ body {
 /* ----------------------------------------------------------- */
 /*-------------------Educación section ----------------------*/
 #cuerpo_educacion{
-    min-width: 100vw;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
+    height: 200px;
 }
 .cuerpo_educacion_cards{
     width: 90%;
-    min-height: 200px;
+    height: 90%;
+    overflow-x: scroll;
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
-.cuerpo_educacion_cards .cuerpo_educacion_cards_card{
-    width: 100%;
-    min-height: 100%;
+.cuerpo_educacion_cards_card{
+    min-width: 100%;
+    min-height: 90%;
 }
 #formulario{
     grid-area: aside;
+}
+/* ----------------------------------------------------------- */
+/*-------------------EXPERIENCIA section ----------------------*/
+#cuerpo_experiencia{
+    width: 100vw;
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cuerpo_experiencia_cards{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    overflow-x: scroll;
+}
+.cuerpo_experiencia_cards_card{
+    min-width: 100%;
+    min-height: 90%;
+    text-align: left;
 }
 
