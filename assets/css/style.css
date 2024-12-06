@@ -193,3 +193,40 @@ body {
     text-align: left;
 }
 
+#cuerpo_proyectos{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+    
+    
+}
+#cuerpo_proyectos .cuerpo_proyectos_cards{
+    height: 90%;
+    width:90%;
+    overflow-x: scroll;
+    display: flex;
+    gap:20px;
+    
+}
+
+#cuerpo_proyectos .cuerpo_proyectos_cards .cuerpo_proyectos_cards_card{
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    height: 100%;
+    
+}
+
+#cuerpo_proyectos .cuerpo_proyectos_cards .cuerpo_proyectos_cards_card img{
+    width: 100%;
+    height: 60%;
+}
+
+#cuerpo_proyectos .cuerpo_proyectos_cards .cuerpo_proyectos_cards_card .cards_body{
+    width: 100%;
+    height: 40% ;
+}
+
