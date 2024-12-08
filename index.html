@@ -12,6 +12,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+    <!-- CDN REMIX ICONS -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
 </head>
 <body class="container_grid">
     <!-- CABECERA de la pagina -->
@@ -128,35 +133,35 @@
                     <div class="cuerpo_proyectos_cards_card">
                         <img src="assets/img/01_proy.PNG" alt="">
                         <div class="cards_body">
-                            <h2>Introducción a CSS</h2>
+                            <h2>Introducción a HTML</h2>
                             <button>Ver</button>
                         </div>
                     </div>
                      <div class="cuerpo_proyectos_cards_card">
                         <img src="assets/img/02_proy.PNG" alt="">
                         <div class="cards_body">
-                            <h2>Alineación Flexbox</h2>
+                            <h2>Introducción a CSS</h2>
                             <button>Ver</button>
                         </div>
                     </div>
                     <div class="cuerpo_proyectos_cards_card">
                         <img src="assets/img/03_proy.PNG" alt="">
                         <div class="cards_body">
-                            <h2>Bootstrap</h2>
+                            <h2>Alineación Flexbox</h2>
                             <button>Ver</button>
                         </div>
                     </div>
                     <div class="cuerpo_proyectos_cards_card">
                         <img src="assets/img/04_proy.PNG" alt="">
                         <div class="cards_body">
-                            <h2>Git-GitHub</h2>
+                            <h2>Bootstrap</h2>
                             <button>Ver</button>
                         </div>
                     </div>
                     <div class="cuerpo_proyectos_cards_card">
                             <img src="assets/img/05_proy.PNG" alt="">
                         <div class="cards_body">
-                            <h2>Proyecto Final</h2>
+                            <h2>Git-GitHub</h2>
                             <button>Ver</button>
                         </div>
                     </div>
@@ -171,13 +176,52 @@
             </section>
     </main>
     <aside id="formulario">
-        <form action="">
-
+        <form class="formulario_form" >       
+            <fieldset>
+                <legend>Formulario contacto</legend>
+                <div class="formulario_form_inputs"> 
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Nombre completo">
+                </div>
+                <div class="formulario_form_inputs">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="email@dominio.cl">
+                </div>
+                
+                <div class="formulario_form_inputs">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" placeholder="+56987654321">
+                </div>      
+                
+                <div class="formulario_form_inputs textarea">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" rows="5" placeholder="Escribe tu mensaje aquí"></textarea>            
+                </div>
+                <div class="formulario_form_boton">
+                    <button>
+                        Enviar
+                    </button>
+                </div>
+            </fieldset>
         </form>
     </aside>                   <!-- FIN CUERPO -->
-    <!-- PIE de pagina -->
+    <!-- PIE de página -->
     <footer id="piepagina">
-
+        <div class="piepagina_redes">
+            <a class="i" href="">
+                <i class="ri-linkedin-box-fill"></i>
+            </a>
+            <a class="i" href="">
+                <i class="ri-instagram-line"></i>
+            </a>
+            <a class="i" href="">
+                <i class="ri-facebook-box-fill"></i> 
+            </a>
+            <a class="i" href="">
+                <i class="ri-github-line"></i>
+            </a>
+        </div>
+        <p>Todos los derechos reservados &copy; 2024</p>
     </footer>
                     <!-- FIN PIE -->
 
