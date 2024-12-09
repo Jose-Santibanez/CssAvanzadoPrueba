@@ -39,8 +39,12 @@ body {
    width: 60px;
    height: 55px;
   /*  box-shadow: 0 0 30px rgb(217, 228, 115); */
-   filter: drop-shadow(0 0 10px rgb(217, 228, 115));
+   /* filter: drop-shadow(0 0 10px rgb(217, 228, 115)); */
+    transition: filter 0.5s linear;
    
+}
+#cabecera_milogo:hover{
+    filter: drop-shadow(0 0 10px rgb(217, 228, 115));
 }
 
 #cabecera_burger{
@@ -138,6 +142,10 @@ body {
     border-radius: 5px;
     background-color: rgb(39, 87, 30);
     color: whitesmoke;
+    transition: filter 1s ease;
+}
+.hero_contacto button:hover{
+    filter: drop-shadow(0 0 20px rgb(217, 228, 115));
 }
 /* --------------------------------------------------------------------------------
 ------------------------      CUERPO    ---------------------------------------- */
@@ -239,6 +247,10 @@ body {
     border-radius: 5px;
     background-color: rgb(39, 87, 30);
     color: whitesmoke;
+    transition: filter 1s ease;
+}
+.cuerpo_proyectos_cards_card .cards_body button:hover{
+    filter: drop-shadow(0 0 20px rgb(102, 151, 72));
 }
 /* -------------------------------------------------------- */
 /* ----------- FORMULARIO --------------- */
@@ -282,6 +294,10 @@ body {
     border-radius: 5px;
     background-color: rgb(51, 96, 42);
     color: whitesmoke;
+    transition: filter 1s ease;
+}
+.formulario_form_boton button:hover{
+    filter: drop-shadow(0 0 20px rgb(102, 151, 72));
 }
 
 #piepagina{
@@ -314,6 +330,7 @@ body {
     }
     #cabecera_navbar{
         display: block;
+        height: 60px;
         color: white;
         width:  auto;   
         margin-right: 40px;   
@@ -323,29 +340,30 @@ body {
         width: 100%;
         list-style: none;
         gap: 20px;
-        
+        height: 70px;
         justify-content: start;
-        margin-right: 20px;
+        margin: 0;
+        
     }
     .cabecera_navbar_li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
          font-size: 18px;
-         padding-top:20px;
          width:100px;
-         height: 50px;
+         height: 100%;
          text-align: center;
-         
+         transition: filter 1s ease;
     }
     .cabecera_navbar_li a{
         text-decoration: none;
         color: white;
+        
     }
     .cabecera_navbar_li:hover{
-        background-color: dimgray;
+        filter: drop-shadow(0 0 30px rgb(153, 196, 126));
     }
 
-    .cabecera_navbar_ul:hover{
-        background-color: darkgray;
-    }
 
 
     #hero{
@@ -377,6 +395,9 @@ body {
     }
     .hero_aboutme img{
         grid-area: img;
+    }
+    .hero_aboutme img:hover{
+        transform: scale(2.2);
     }
     .hero_contacto{
         align-items: start;
