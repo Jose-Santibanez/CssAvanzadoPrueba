@@ -24,7 +24,7 @@ body {
     left:0;
     position:fixed;
     grid-area: header;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -302,12 +302,111 @@ body {
 }
 .piepagina_redes .i{
     width: 30px;
-    height: 30px;
     text-decoration: none;
 }
+/* ----------------------------------------------- */
+/* --------- VERSION DESKTOP ---------------*/
+
+@media (min-width:576px)
+{
+    #cabecera_burger{
+        display:none;
+    }
+    #cabecera_navbar{
+        display: block;
+        color: white;
+        width:  auto;   
+        margin-right: 40px;   
+    }
+    .cabecera_navbar_ul{
+        display: flex;
+        width: 100%;
+        list-style: none;
+        gap: 20px;
+        
+        justify-content: start;
+        margin-right: 20px;
+    }
+    .cabecera_navbar_li {
+         font-size: 18px;
+         padding-top:20px;
+         width:100px;
+         height: 50px;
+         text-align: center;
+         
+    }
+    .cabecera_navbar_li a{
+        text-decoration: none;
+        color: white;
+    }
+    .cabecera_navbar_li:hover{
+        background-color: dimgray;
+    }
+
+    .cabecera_navbar_ul:hover{
+        background-color: darkgray;
+    }
 
 
+    #hero{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+       /*  align-items: center; */
+        justify-content: center;
+    }
+    .hero_aboutme{
+        text-align: center;
+        margin: 10px 0 0 40px;
+        display: grid;
+        height: 50%;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: 
+                            "h1 h1 img img"
+                            "h1 h1 img img";
+                            
+    }
+    .hero_aboutme .h1{
+        grid-area: h1;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: start;
+    }
+    .hero_aboutme img{
+        grid-area: img;
+    }
+    .hero_contacto{
+        align-items: start;
+        justify-content: start;
+        margin-left: 80px;
+    }
+    /* ------------------------------- */
+    #Cuerpo_proyectos{
+        display: flex; 
+        flex-direction: column;
+        height: 100vh;
+    }
+    .cuerpo_proyectos_cards{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        height: 100%;
+        width: 80%;
+        justify-content: center;
+    }
 
+    .cuerpo_proyectos_cards_card {
+        display: flex;
+        flex-direction: column;
+        min-width: 20%;
+        height: 300px;
+
+    }
+
+}
 
 
 
